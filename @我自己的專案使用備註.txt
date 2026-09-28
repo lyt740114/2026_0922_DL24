@@ -1,0 +1,26 @@
+
+將專案打包單一檔案讓 Gemini Notebook 讀取（Windows CMD）：
+cd /d "C:\Users\Test\Desktop\Jim\2026_0922_DL24"
+npx repomix
+
+
+步驟 3：使用 AI 產出 AGENTS.md
+開啟 ChatGPT、Claude 或 Gemini 網頁端/桌面端。
+
+將剛產生的 repomix-output.xml 檔案附加（上傳）給 AI。
+
+輸入以下提示詞 (Prompt)：
+
+「這是我 USB-PD 3.2 Protocol Log 分析工具的完整專案打包檔。請幫我在專案根目錄下生成一份標準的 AGENTS.md 檔案。內容需包含：
+
+Project Overview：說明這是一個基於 Python 的 USB-PD 3.2 分析與驗證系統。
+
+Architecture & Directory Responsibilities：詳細說明 core/、domain/、rules/、storage/、exporters/、ui/ 與 specs/ 各模組職責。
+
+Core Workflow & FSM：說明資料流向（Parser -> FSM Tracker -> Rule Engine -> Exporter）。
+
+Coding Style & Rules for Agents：提示 Agent 未來修改程式碼時應遵循的原則（例如：保持 Domain 邏輯純粹、新增規則時需於 rules/ 新增並加上 Unit Test 等）。
+
+Common Commands：如何執行測試或主程式（如 python main.py 或 pytest）。」
+
+將 AI 輸出的 Markdown 內容複製，並在專案根目錄建立名為 AGENTS.md 的檔案貼上即可！

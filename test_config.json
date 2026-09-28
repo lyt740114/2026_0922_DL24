@@ -1,0 +1,32 @@
+{
+  "SKYFALL_JIG_MODE": {
+    "STEPS": [
+      1.5,
+      2.5,
+      3.0
+    ],
+    "STEP_DURATION_SEC": 5,
+    "V3_0A_PASS_MIN": 4.52,
+    "V3_0A_BORDERLINE_MIN": 4.47,
+    "OCP_START_CURRENT": 3.5,
+    "OCP_MAX_CURRENT": 4.0,
+    "OCP_STEP_CURRENT": 0.1,
+    "OCP_TRIP_MAX_VOLT": 1.0,
+    "RECOVERY_MIN_VOLT": 4.75
+  },
+  "FA_DIRECT_MODE": {
+    "DEFAULT_CURRENT": 1.0,
+    "DEFAULT_DURATION": 5,
+    "DEFAULT_VMIN": 4.75,
+    "DEFAULT_VMAX": 5.25
+  },
+  "BATTERY_CYCLE_MODE": {
+    "DEFAULT_MODE": "CC",
+    "DISCHARGE_CURRENT_A": 2.0,
+    "CUTOFF_VOLTAGE_V": 3.0,
+    "OVER_TEMP_LIMIT_C": 55.0,
+    "REST_TIME_SEC": 900,
+    "SAMPLING_INTERVAL_SEC": 1.0,
+    "DCIR_CALC_ENABLE": true
+  }
+}
